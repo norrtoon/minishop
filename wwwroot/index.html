@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MiniShop</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛍️</text></svg>">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#/" class="logo">Mini<span>Shop</span></a>
+      <nav class="nav" id="nav"></nav>
+    </div>
+  </header>
+  <main id="app" class="container"></main>
+  <div class="modal" id="modal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true">
+      <button class="modal__close" data-close aria-label="Закрыть">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div class="toasts" id="toasts"></div>
+
+  <footer class="footer">MiniShop · ASP.NET Core Web API + JS-клиент (AJAX) · <a href="/swagger" target="_blank">Swagger</a></footer>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
